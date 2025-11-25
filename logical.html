@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리형 인공어 - 인공어 위키</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🌐 인공어 위키</h1>
+        <p>인공어의 정의와 역사, 그리고 철학</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">메인</a></li>
+            <li><a href="intro.html">인공어 소개</a></li>
+            <li><a href="cases.html">실제 사용 사례</a></li>
+            <li><a href="logical.html" class="active">논리형 인공어</a></li> <li><a href="future.html">앞으로의 전망</a></li>
+            <li><a href="information.html">정보</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="content-area">
+            <article>
+                <h2>논리형 인공어</h2>
+                <p>논리형 인공어(Logical Language)는 언어의 모호성을 제거하고 사고를 명확하게 표현하기 위해 설계된 언어입니다.</p>
+                <hr>
+                
+                <h3>1. 프로그래밍 언어와의 관계</h3>
+                <p>C언어, Python, Java 같은 프로그래밍 언어도 넓은 범위에서 보면 '인공어'의 범주에 속합니다. 인간과 컴퓨터 간의 정확한 소통을 위해 만들어졌기 때문입니다.</p>
+                <br>
+                <h3>2. 로지반 (Lojban)</h3>
+                <p>대표적인 논리 언어인 로지반은 문법적 모호성이 전혀 없도록 설계되었습니다. 컴퓨터가 파싱(Parsing)하기 쉬운 구조를 가지고 있습니다.</p>
+                
+                <ul>
+                    <li>특징 1: 문화적 중립성</li>
+                    <li>특징 2: 수학적 논리 구조</li>
+                </ul>
+            </article>
+
+            <div class="interaction-area">
+                <button id="likeBtn" onclick="toggleLike()">❤️ 좋아요 <span id="likeCount">0</span></button>
+                <div class="comment-section">
+                    <h3>💬 한줄 의견</h3>
+                    <input type="text" id="commentInput" placeholder="의견을 남겨주세요">
+                    <button onclick="addComment()">등록</button>
+                    <ul id="commentList"></ul>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3>🔧 보기 설정</h3>
+                <button onclick="zoomIn()">글자 크게 (+)</button>
+                <button onclick="zoomOut()">글자 작게 (-)</button>
+            </div>
+            <div class="widget">
+                <h3>목차</h3>
+                <ul>
+                    <li>논리형 인공어란?</li>
+                    <li>프로그래밍 언어</li>
+                    <li>로지반</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright 2025. ????????. All rights reserved.</p>
+        <p>????????학과 ???????? ????????</p>
+    </footer>
+</body>
+</html>

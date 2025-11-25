@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실제 사용 사례 - 인공어 위키</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🌐 인공어 위키</h1>
+        <p>인공어의 정의와 역사, 그리고 철학</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">메인</a></li>
+            <li><a href="intro.html">인공어 소개</a></li>
+            <li><a href="cases.html" class="active">실제 사용 사례</a></li> <li><a href="logical.html">논리형 인공어</a></li>
+            <li><a href="future.html">앞으로의 전망</a></li>
+            <li><a href="information.html">정보</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="content-area">
+            <article>
+                <h2>실제 사용 사례</h2>
+                <p>인공어는 소설, 영화, 애니메이션 등 다양한 미디어 콘텐츠에서 세계관의 깊이를 더해주는 중요한 요소로 사용되고 있습니다.</p>
+                <hr>
+                
+                <h3>1. 대중 매체 속의 인공어</h3>
+                <p>가상의 세계를 더욱 현실감 있게 만들기 위해 창조된 언어들입니다.</p>
+                
+                <ul>
+                    <li><strong>반지의 제왕 (J.R.R. 톨킨):</strong> 퀘냐(Quenya)와 신다린(Sindarin) 등 엘프어가 대표적입니다.</li>
+                    <li><strong>아바타 (제임스 카메론):</strong> 나비족이 사용하는 나비어(Na'vi)는 실제 언어학자가 문법을 설계했습니다.</li>
+                    <li><strong>미니언즈:</strong> 미니언어(Minionese)는 여러 언어가 섞인 재미있는 형태를 보여줍니다.</li>
+                </ul>
+                <br>
+                <div style="background-color: #eee; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #555;">
+                    [영화 속 인공어 장면 이미지 예시]
+                </div>
+                <br>
+
+                <h3>2. 현실 세계의 인공어</h3>
+                <p>단순한 재미가 아니라, 실제 사람들 간의 소통을 목적으로 만들어진 언어입니다.</p>
+                
+                <ul>
+                    <li><strong>에스페란토 (Esperanto):</strong> 1887년 자멘호프 박사가 창안했으며, 전 세계적으로 가장 많이 쓰이는 국제 보조어입니다.</li>
+                    <li><strong>토키포나 (Toki Pona):</strong> '단순함'을 철학으로 하여 적은 단어로 소통하는 것을 목표로 합니다.</li>
+                </ul>
+            </article>
+
+            <div class="interaction-area">
+                <button id="likeBtn" onclick="toggleLike()">❤️ 좋아요 <span id="likeCount">0</span></button>
+                <div class="comment-section">
+                    <h3>💬 한줄 의견</h3>
+                    <input type="text" id="commentInput" placeholder="가장 인상 깊은 언어는 무엇인가요?">
+                    <button onclick="addComment()">등록</button>
+                    <ul id="commentList"></ul>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3>🔧 보기 설정</h3>
+                <button onclick="zoomIn()">글자 크게 (+)</button>
+                <button onclick="zoomOut()">글자 작게 (-)</button>
+            </div>
+            <div class="widget">
+                <h3>목차</h3>
+                <ul>
+                    <li>대중 매체 속 인공어</li>
+                    <li>현실 세계의 인공어</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright 2025. ????????. All rights reserved.</p>
+        <p>????????학과 ???????? ????????</p>
+    </footer>
+</body>
+</html>

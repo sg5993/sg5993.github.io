@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인공어 소개 - 인공어 위키</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🌐 인공어 위키</h1>
+        <p>인공어의 정의와 역사, 그리고 철학</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">메인</a></li>
+            <li><a href="intro.html" class="active">인공어 소개</a></li>
+            <li><a href="cases.html">실제 사용 사례</a></li>
+            <li><a href="logical.html">논리형 인공어</a></li>
+            <li><a href="future.html">앞으로의 전망</a></li>
+            <li><a href="information.html">정보</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="content-area">
+            <article>
+                <h2>1. 인공어의 정의</h2>
+                <p>인공어(Constructed Language, Conlang)란 자연적으로 발생한 언어가 아니라, 특정한 목적을 위해 한 사람이나 여러 사람에 의해 의도적으로 만들어진 언어를 의미합니다.</p>
+                <hr>
+                
+                <h2>2. 역사와 발전 과정</h2>
+                <p>인공어는 단순히 오락을 위해 시작된 것이 아닙니다. 19세기 폴란드의 안과 의사 <strong>루도비코 라자로 자멘호프</strong>는 언어의 장벽으로 인한 갈등을 해소하고자 '에스페란토'를 창시했습니다.</p>
+                
+                <h3>주요 특징</h3>
+                <ul>
+                    <li><strong>소통과 통합:</strong> 에스페란토, 볼라퓌크 등</li>
+                    <li><strong>예술과 창작:</strong> 반지의 제왕(엘프어), 아바타(나비어)</li>
+                    <li><strong>논리와 실험:</strong> 로지반, 토키포나</li>
+                </ul>
+            </article>
+
+            <div class="interaction-area">
+                <button id="likeBtn" onclick="toggleLike()">❤️ 좋아요 <span id="likeCount">0</span></button>
+                <div class="comment-section">
+                    <h3>💬 한줄 의견</h3>
+                    <input type="text" id="commentInput" placeholder="의견을 남겨주세요">
+                    <button onclick="addComment()">등록</button>
+                    <ul id="commentList">
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3>🔧 보기 설정</h3>
+                <button onclick="zoomIn()">글자 크게 (+)</button>
+                <button onclick="zoomOut()">글자 작게 (-)</button>
+            </div>
+            <div class="widget">
+                <h3>목차</h3>
+                <ul>
+                    <li>인공어의 정의</li>
+                    <li>역사와 발전</li>
+                    <li>주요 특징</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright 2025. ????????. All rights reserved.</p>
+        <p>????????학과 ???????? ????????</p>
+    </footer>
+</body>
+</html>

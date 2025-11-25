@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 및 출처 - 인공어 위키</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        /* 이 페이지에서만 쓰는 간단한 스타일 추가 */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .info-table th, .info-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .info-table th {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            width: 30%;
+        }
+        
+        .reference-list li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 3px solid #ddd;
+        }
+
+        /* 문의하기 폼 스타일 */
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌐 인공어 위키</h1>
+        <p>인공어의 정의와 역사, 그리고 철학</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">메인</a></li>
+            <li><a href="intro.html">인공어 소개</a></li>
+            <li><a href="cases.html">실제 사용 사례</a></li>
+            <li><a href="logical.html">논리형 인공어</a></li>
+            <li><a href="future.html">앞으로의 전망</a></li>
+            <li><a href="information.html" class="active">정보</a></li> </ul>
+    </nav>
+
+    <div class="container">
+        <section id="content-area">
+            <article>
+                <h2>1. 프로젝트 정보</h2>
+                <p>이 웹사이트는 2025학년도 ???????? 과제 제출을 위해 제작되었습니다.</p>
+                <br>
+                <table class="info-table">
+                    <tr>
+                        <th>과목명</th>
+                        <td>????????</td>
+                    </tr>
+                    <tr>
+                        <th>학과(단대)</th>
+                        <td>????????학과</td>
+                    </tr>
+                    <tr>
+                        <th>학번 / 성명</th>
+                        <td>???????? ???</td>
+                    </tr>
+                    <tr>
+                        <th>담당 교수</th>
+                        <td>??? 교수님</td>
+                    </tr>
+                    <tr>
+                        <th>제출일자</th>
+                        <td>2025.??.??</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <h2>2. 참고 문헌 (References)</h2>
+                <p>본 사이트의 내용은 아래의 문헌 및 자료를 참고하여 작성되었습니다.</p>
+                <br>
+                <ul class="reference-list">
+                    <li>[1] Arika Okrent. "In the Land of Invented Languages," New York: Spiegel & Grau, 2009.</li>
+                    <li>[2] J.R.R. Tolkien. "The Monsters and the Critics, and Other Essays," HarperCollins, 1983.</li>
+                    <li>[3] David J. Peterson. "The Art of Language Invention," Penguin Books, 2015.</li>
+                    <li>[4] Wikipedia Contributors. "Constructed language," Wikipedia, The Free Encyclopedia. [Online]. Available: https://en.wikipedia.org/wiki/Constructed_language.</li>
+                    <li>[5] Esperanto USA. "What is Esperanto?" Internet: https://esperanto-usa.org/. [Accessed: Nov. 25, 2025].</li>
+                </ul>
+
+                <hr>
+
+                <h2>3. 문의하기</h2>
+                <p>웹사이트 내용에 대한 수정 제안이나 문의사항이 있다면 아래 폼을 작성해주세요.</p>
+                <br>
+                <div class="contact-form">
+                    <label for="c-name">이름</label>
+                    <input type="text" id="c-name" placeholder="이름을 입력하세요">
+
+                    <label for="c-email">이메일</label>
+                    <input type="email" id="c-email" placeholder="example@email.com">
+
+                    <label for="c-message">내용</label>
+                    <textarea id="c-message" rows="5" placeholder="문의 내용을 입력하세요"></textarea>
+
+                    <button onclick="alert('문의가 접수되었습니다. (실제 전송은 되지 않습니다)')">문의 보내기</button>
+                </div>
+
+            </article>
+
+            <div class="interaction-area">
+                <div class="comment-section">
+                    <h3>💬 방명록</h3>
+                    <input type="text" id="commentInput" placeholder="방명록을 남겨주세요">
+                    <button onclick="addComment()">등록</button>
+                    <ul id="commentList"></ul>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3>🔧 보기 설정</h3>
+                <button onclick="zoomIn()">글자 크게 (+)</button>
+                <button onclick="zoomOut()">글자 작게 (-)</button>
+            </div>
+            <div class="widget">
+                <h3>목차</h3>
+                <ul>
+                    <li>프로젝트 정보</li>
+                    <li>참고 문헌</li>
+                    <li>문의하기</li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>사이트 맵</h3>
+                <ul>
+                    <li><a href="index.html">메인으로 이동</a></li>
+                    <li><a href="intro.html">인공어란?</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright 2025. ????????. All rights reserved.</p>
+        <p>????????학과 ???????? ????????</p>
+    </footer>
+</body>
+</html>

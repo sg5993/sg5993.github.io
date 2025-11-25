@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앞으로의 전망 - 인공어 위키</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🌐 인공어 위키</h1>
+        <p>인공어의 정의와 역사, 그리고 철학</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">메인</a></li>
+            <li><a href="intro.html">인공어 소개</a></li>
+            <li><a href="cases.html">실제 사용 사례</a></li>
+            <li><a href="logical.html">논리형 인공어</a></li>
+            <li><a href="future.html" class="active">앞으로의 전망</a></li> <li><a href="information.html">정보</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="content-area">
+            <article>
+                <h2>앞으로의 전망</h2>
+                <p>인공어는 과거의 유산이 아니라, 현재와 미래에도 계속해서 발전하고 있는 분야입니다.</p>
+                <hr>
+                
+                <h3>1. 현재의 인식 변화</h3>
+                <p>과거에는 소수의 취미 생활로 여겨졌으나, 최근에는 영화, 게임 등 콘텐츠 산업의 발달로 인해 '세계관의 완성도'를 높이는 중요한 요소로 인식되고 있습니다.</p>
+                <br>
+                <h3>2. 미래의 가능성</h3>
+                <p>인공지능(AI)과의 대화를 위한 새로운 형태의 인공어나, 우주 시대에 외계 문명과의 소통을 가정한 언어 연구 등 다양한 가능성이 열려 있습니다.</p>
+                
+                <ul>
+                    <li>콘텐츠 IP 확장의 핵심 도구</li>
+                    <li>언어학적 실험의 지속</li>
+                </ul>
+            </article>
+
+            <div class="interaction-area">
+                <button id="likeBtn" onclick="toggleLike()">❤️ 좋아요 <span id="likeCount">0</span></button>
+                <div class="comment-section">
+                    <h3>💬 한줄 의견</h3>
+                    <input type="text" id="commentInput" placeholder="의견을 남겨주세요">
+                    <button onclick="addComment()">등록</button>
+                    <ul id="commentList"></ul>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3>🔧 보기 설정</h3>
+                <button onclick="zoomIn()">글자 크게 (+)</button>
+                <button onclick="zoomOut()">글자 작게 (-)</button>
+            </div>
+            <div class="widget">
+                <h3>목차</h3>
+                <ul>
+                    <li>인식의 변화</li>
+                    <li>미래 가능성</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright 2025. ????????. All rights reserved.</p>
+        <p>????????학과 ???????? ????????</p>
+    </footer>
+</body>
+</html>
